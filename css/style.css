@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s;
+}
+h1 {
+  font-size: 4rem;
+}
+header,
+#duration {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*-------------- Header----------- */
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../images/header.jpg);
+  height: 80vh;
+  color: white;
+}
+
+.sideNav,
+.close-icon span,
+.details h3 {
+  cursor: pointer;
+}
+.nav-content {
+  height: 60vh;
+}
+
+nav {
+  width: 0%;
+  font-size: calc(1.1rem + 0.9vw);
+  background-color: #111111;
+}
+
+nav > * {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.sideNav span,
+.close-icon span,
+.social-media span {
+  transition: color 0.5s;
+}
+
+nav a:hover,
+.close-icon:hover span,
+.sideNav:hover span {
+  color: #e68285;
+}
+
+/*-------------- details------------ */
+.details h3 {
+  background-color: #e68285;
+  padding: 10px 0;
+}
+
+.details p {
+  background-color: #ccc;
+  padding: 10px 0;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .details-content {
+    width: 70% !important;
+  }
+}
+@media (max-width: 576px) {
+  .details-content {
+    width: 90% !important;
+  }
+}
+/* duration */
+#duration {
+  background-image: linear-gradient(
+      to right,
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../images/invitation.jpg);
+  padding: 80px 0;
+}
+/* Contact */
+.social-media li:hover,
+.btn-style {
+  background-color: #e68285;
+}
+.social-media li:hover span {
+  color: #000;
+}
+.contact p,
+.contact span,
+.contact a {
+  color: #777;
+}
+form > * {
+  margin-bottom: 20px;
+}
+.form-control {
+  border-radius: 0;
+}
+.form-control:focus {
+  border-color: #e68285;
+  box-shadow: 0 0 0 0.25rem rgba(214, 46, 51, 0.6);
+}
+textarea {
+  resize: none;
+  min-height: 120px !important;
+}
+.btn-style {
+  border: 0;
+}
+.num {
+  color: #e68285;
+  font-weight: 900;
+}
